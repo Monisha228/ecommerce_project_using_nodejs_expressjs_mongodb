@@ -1,0 +1,260 @@
+ <div class="tot">
+ <div class="caption">
+            <h1>Welcome to Ecomm</h1>
+            <p>Top Selling Online Shopping, Free Shipping Worldwide, Cash on delivery available with Easy Returns</p>
+            <button><a href="/down">SHOP NOW</a></button>
+  </div>
+  </div>
+  
+<h2>Deal of the day</h2>
+{{#each products}}
+<div class="product_box">
+  <div class="product_row">
+    {{#each this}}
+    <div class="product">
+      <img src="{{this.imagePath}}" class="product-img-top">
+      <div class="wish">
+      <a href="/add-wish/{{this._id}}"><i class="fa-regular fa-heart"></i></a>
+      </div>
+      <div class="product-body">
+        <h4 class="product-title">{{this.title}}</h4>
+        <h5 class="product-text">{{this.description}}</h5>
+        <h6 class="product-price">Price:{{this.price}}</h6>
+        <p class="cart-btn"><a href="/add-to-cart/{{this._id}}">
+        <button>Add to cart</button>
+        </a></p>
+      </div>
+     </div>
+    {{/each}}
+  </div>
+</div>
+{{/each}}
+
+<div class="third">
+    <h1>Categories</h1>
+    <div class="cards2">
+        <div class="cen1">
+        <a href="/western">
+           <img src="https://i.pinimg.com/564x/ff/50/66/ff506680c56389f172581c5fe5cd08fb.jpg">
+           <h2>Western</h2></a>
+        </div>
+
+        <div class="cen2">
+            <a href="/down">
+            <img src="https://i.pinimg.com/564x/e9/e4/08/e9e408042794b173931da2a57f30fbd8.jpg">
+            <h2>Ethnic</h2>
+        </a>
+        </div>
+
+        <div class="cen3">
+            <a href="/saree">
+            <img src="https://i.pinimg.com/564x/33/a5/93/33a5932d5d6b9f6b3948acf8e5d6d2f7.jpg">
+            <h2>Saree</h2>
+            </a>
+        </div>
+
+        <div class="cen4">
+            <a href="/skirt">
+            <img src="https://i.pinimg.com/564x/f4/91/96/f49196427f7b6d56197410621cdfe3f6.jpg">
+            <h2>Skirts</h2>
+        </a>
+        </div>
+        <div class="cen5">
+            <a href="/lehanga">
+            <img src="https://i.pinimg.com/originals/b4/d8/f8/b4d8f8f435dc1d29e9d4e3c025b14cf9.jpg">
+            <h2>Lehanga</h2>
+        </a>
+        </div>
+        <div class="cen6">
+            <a href="/tops">
+            <img src="https://i.pinimg.com/564x/c4/58/21/c458214869ddb73031f1fc565dc5334b.jpg">
+            <h2>Tops</h2>
+        </a>
+        </div>
+        <div class="cen7">
+            <a href="/jumpsuits">
+            <img src="https://i.pinimg.com/736x/84/5a/c0/845ac00eafe299cc49c3ad2e317029c8.jpg">
+            <h2>Jumpsuits</h2>
+        </a>
+        </div>
+        <div class="cen8">
+            <a href="/dupatta">
+            <img src="https://i.pinimg.com/564x/86/a0/33/86a033f5134a928b7114dbd85a9d2788.jpg">
+            <h2>Dupatta</h2>
+        </a>
+        </div>
+        <div class="cen9">
+            <a href="/pants">
+            <img src="https://i.pinimg.com/564x/12/0c/e7/120ce7fb4390e8c2be21f97a6a6c0482.jpg">
+            <h2>Pants</h2>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="fourth">
+    <h1>TOP BRANDS</h1><br>
+    <div class="longs">
+        <div class="longc1">
+            <button><a href="/western">SHOP NOW</a></button>
+            <img src="https://i.pinimg.com/564x/cf/94/b3/cf94b33a76591aacf172a70f05c1107a.jpg">   
+        </div>
+        <div class="longc2">
+            <button><a href="/down">SHOP NOW</a></button>
+            <img src="https://i.pinimg.com/736x/d2/5a/57/d25a572097b7f1b8a3b61f41a9e4181e.jpg">
+        </div>
+        <div class="longc3">
+            <button><a href="/saree">SHOP NOW</a></button>
+            <img src="https://i.pinimg.com/564x/a5/c9/4e/a5c94ed725ed347749f9bb8d199c8d9b.jpg">
+        </div>
+    </div>
+  </div>
+
+  <div class="fifth">
+    <div class="content1">
+        <div class="phobr">
+           <img src="https://clipart-library.com/images_k/woman-transparent-png/woman-transparent-png-10.png">
+           
+            </div>
+        <div class="cont1">
+            <h1>Western wear</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis at maxime, veritatis, dignissimos mollitia quasi nostrum, fugiat error nam sit et dolores. Pariatur quas quia obcaecati quae neque quasi.</p>
+            <button><a href="/western">SHOP NOW</a></button>
+        </div>
+    </div>
+    </div>
+  
+<h2>Western</h2>
+{{#each products}}
+<div class="product_box">
+  <div class="product_row">
+    {{#each this}}
+    <div class="product">
+      <img src="{{this.imagePath}}" class="product-img-top">
+      <div class="wish">
+
+      <a href="/add-wish/{{this._id}}"><i class="fa-regular fa-heart"></i></a>
+     
+      </div>
+      <div class="product-body">
+        <h4 class="product-title">{{this.title}}</h4>
+        <h5 class="product-text">{{this.description}}</h5>
+        <h6 class="product-price">Price:{{this.price}}</h6>
+        <p class="cart-btn"><a href="/add-to-cart/{{this._id}}">
+        <button>Add to cart</button>
+        </a></p>
+      </div>
+     </div>
+    {{/each}}
+  </div>
+</div>
+{{/each}}
+
+<div class="next">
+            <div class="navs">
+                    <div class="box1">
+                        <button>Previous</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>....</button>
+                        <button>5</button>
+                        <button><a href="/saree">Next></a></button>
+                    </div>
+            </div>
+        </div>
+    
+<footer>
+    <div class="detail">
+        <div class="column">
+            <div class="col1">
+                <ul>
+                   <li>Contact us</li>
+                   <li>111/2a rane ths colony, salem, <br>Tamilnadu, India</li>
+                   <li>Email:
+                    querysany123@gmail.com
+                   </li>
+                   <li>2003-2023</li>
+                </ul>
+            </div>
+            <div class="col2">
+                <ul>
+                    <li>Get to know us</li>
+                    <li>About us</li>
+                    <li>Careers</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="col3">
+               
+                <ul>
+                    <li>Keep in touch</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </div>
+            <div class="col4">
+                <ul>
+                <li>Download the app</li>
+                <li>Play store </li>
+                <li>App store </li>
+                <li>Online Shopping</li>
+                <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cop">
+            <h1>&copy Copyrights @Ecomm</h1>
+            <p>Top Selling Online Shopping, Free Shipping Worldwide, Cash on delivery available with Easy Returns</p>
+        </div>
+    </div>
+    </footer>
+
+
+{{!-- 
+<div class="second">
+    {{#each products}}
+    <div class="cards">
+        <div class="card-1">
+          {{#each this}}
+            <div class="card1">
+                <a href="/add-to-cart/{{this._id}}">
+                <img src="{{this.imagePath}}">
+                <div class="cl">
+                <h3>{{this.title}}</h3>
+                <button>Add to cart</button></a>
+                </div>
+            </div>
+        </div> 
+    </div>
+{{/each}} 
+</div>
+
+{{/each}} --}}
+
+{{!-- 
+<h2>Our Products</h2> --}}
+
+{{!-- 
+<div class="container">
+  <div class="card-group">
+    <div class="card">
+      <img height="500" width="1px" src="{{this.imagePath}}" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <p class="card-text">{{this.description}}</p>
+        <p>Price:{{this.price}}</p>
+      </div>
+      <div class="card-footer">
+        <p><a href="/add-to-cart/{{this._id}}">
+        <button style="float:right; color:aliceblue; background:darkgreen">Add to cart</button>
+        </a></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+ --}}

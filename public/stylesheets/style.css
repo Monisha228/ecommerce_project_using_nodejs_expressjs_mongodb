@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.total
+{
+    position: relative;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+header
+{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 70px;
+    height:75px;
+    font-family: 'Cinzel', serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.logo
+{
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.search
+{
+    height:35px;
+    width:290px;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.search i
+{
+    margin: 10px;
+}
+
+.search input{
+    height:35px;
+    width:250px;
+    border: none;
+    outline: none;
+}
+.nav1 , .nav2
+{
+    list-style: none;
+}
+.nav1 li
+{
+    font-weight:500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    padding: 10px;
+    display: inline-block;
+}
+.nav1 li a
+{
+    font-weight:500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+    color: black;
+}
+.nav2 li:first-child i
+{
+    padding-left: 22px;
+    padding-bottom: 10px;
+}
+.nav2 li:nth-child(2) i
+{
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+.nav2 li:nth-child(3) i
+{
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+.nav2 li
+{
+    padding: 10px;
+    font-size: 17px;
+    display: inline-block;   
+}
+.nav2 li a
+{
+    font-weight:500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+
+
+
+    color: black;
+}
+.nav1 :nth-child(5)
+{
+    position: relative;
+}
+.drop
+{
+    position: absolute;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    width:120px;
+    height:70px;
+    padding:10px;
+    gap: 20px;
+    display: none;
+}
+.nav1 :nth-child(5) .drop a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.nav1 :nth-child(5) .drop a:hover{
+    border-bottom: black 1px solid;
+}
+.nav1 :nth-child(5):hover .drop
+{
+    display: block;
+}
+.tot{
+  height:100vh;
+  background: url("https://img.freepik.com/free-photo/handbag-near-sunglasses-with-wear-plant-twigs_23-2148107978.jpg?w=900&t=st=1693204100~exp=1693204700~hmac=3ec1e9ca579b3be7c546ea8bf12bd4b6709fe9377c2bdb691e5ce3c8d33c6ed2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.caption 
+{
+    position: absolute;
+    right:150px;
+    top:250px;
+    height:200px;
+    width: 500px;
+    padding: 10px;
+}
+.caption h1
+{
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Niconne', cursive;    
+    font-size: 50px;
+}
+.caption p
+{
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.caption button
+{
+    margin-left: 150px;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+    height:30px;
+    width:150px;
+}
+.caption button a 
+{
+ text-decoration: none;  
+ font-family: 'Oswald', sans-serif;
+ color:white;
+}
+.product
+{
+    position: relative;
+}
+
+.product_box{
+    display: inline-block;
+    margin-left: 60px;
+   width: 200px;
+   height:380px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   margin-bottom: 30px;
+   border-radius: 5px;
+   overflow: hidden;
+  }
+  .product_box img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+  }
+  .product-body{
+    padding: 10px;
+    text-align:center;
+    font-family: 'EB Garamond', serif;
+  }
+.wish
+{
+    background-color: rgba(255, 255, 255, 0.743);
+    left:170px;
+    border-radius: 5px;
+    position: absolute;
+    top:220px;
+}
+.wish i
+{
+    color:black;
+    padding: 3px;
+    text-align: center;
+}
+  .product-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    font-family: 'EB Garamond', serif;
+  }
+  .product-text{
+    font-size: 13px;
+    font-family: 'EB Garamond', serif;
+
+  }
+  .product-price{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+  }
+  .cart-btn button{
+    margin-top: 6px;
+    margin-left: 0px;
+    padding:10px;
+    background-color: pink;
+    border: none;
+    font-size: 15px;
+    font-family: 'EB Garamond', serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+.second
+{
+    height:450px;
+    width:100%;
+    padding: 30px;
+}
+.cards a
+{
+    text-decoration: none;
+    color: black;
+}
+h2
+{
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    gap:20px;
+    height:330px;
+}
+.card 
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    gap:20px;
+    height:330px;   
+}
+
+.card1, .card2, .card3, .card4, .card5
+{
+    width: 200px;
+    border-radius: 7px;
+    font-family: 'EB Garamond', serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card1 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.card1 button , .card2 button ,.card3 button , .card4 button ,.card5 button
+{
+    margin-top: 6px;
+    margin-left: 50px;
+    padding:10px;
+    background-color: pink;
+    border: none;
+    font-family: 'EB Garamond', serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card h2
+{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.card2 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.card h3
+{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.card3 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.card h3
+{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.card4 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.card h3
+{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.card5 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.card h3
+{
+    text-align: center;
+}
+.third
+{
+    height:290px;
+    min-width:100%;
+    /* padding: 20px; */
+}
+.third h1
+{
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cards2 h2
+{
+    font-size: 19px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cards2 a{
+    text-decoration: none;
+    color: black;
+}
+.cards2
+{
+    display: flex;
+    height:230px;
+    width: 100%;
+    padding-top: 10px;
+    margin-left: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.cen1 img
+{
+    border-radius: 50%;
+    padding-left: 16px;
+    height: 150px;
+    width:150px;
+    object-fit: cover;
+}
+.cen2 img, .cen3 img , .cen4 img, .cen5 img , .cen6 img,.cen7 img , .cen8 img, .cen9 img{
+    border-radius: 50%;
+    padding-left: 16px;
+    height: 150px;
+    width:150px;
+    object-fit: cover;
+}
+.fourth
+{
+    padding-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.longs
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.longc1 img{
+    height:550px;
+    width:430px;
+    object-fit: cover;
+    opacity:0.8;
+    transition: transform .2s ease-in;
+}
+.longc2 img{
+    height:550px;
+    width:430px;
+    object-fit: cover;
+    opacity:0.8;
+    transition: transform .2s ease-in;
+}
+.longc3 img{
+    height:550px;
+    width:430px;
+    object-fit: cover;
+    opacity:0.8;
+    transition: transform .2s ease-in;
+}
+.longc1 img:hover,.longc2 img:hover,.longc3 img:hover
+{
+    opacity: 1;
+    transform: scale(0.9);
+}
+.fourth h1
+{
+    padding-top:20px;
+    padding-left:25px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.longc1 button{
+    position: absolute;
+    top:450px;
+    left:170px;
+    z-index: 2;
+    background-color: transparent;
+    color:white;
+    height:30px;
+    width:100px;
+    border: 1px solid white;
+}
+.longc1 button a
+{
+    text-decoration:none;
+    color:white;
+}
+.longc2 button a
+{
+    text-decoration:none;
+    color:white;
+}
+.longc3 button a
+{
+    text-decoration:none;
+    color:white;
+}
+.longc2 button
+{
+    position: absolute;
+    top:450px;
+    left:620px;
+    z-index: 2;
+    background-color: transparent;
+    color:white;
+    height:30px;
+    width:100px;
+    border: 1px solid white;
+}
+.longc3 button
+{
+    position: absolute;
+    top:450px;
+    left:1070px;
+    z-index: 2;
+    background-color: transparent;
+    color:white;
+    height:30px;
+    width:100px;
+    border: 1px solid white;
+}
+.fifth
+{
+    height:600px;
+    width:100%;
+    padding-top:150px;
+    margin-bottom: 60px;
+    
+}
+.content1 
+{
+    background-color: beige;
+    height:500px;
+    width:100%;
+    display: flex;
+    position: relative;
+}
+.content1 .phobr img
+{
+    height: 715px;
+    width:520px;
+    object-fit: cover;
+    position: absolute;
+    bottom:0;
+    padding-left: 20px;
+    
+}
+.content1 .cont1
+{
+    position: absolute;
+    top:100px;
+    right:300px;
+    height:200px;
+    width:500px;
+}
+.content1 .cont1 h1
+{
+    font-family: 'Niconne', cursive;
+    font-size: 55px;
+}
+.content1 .cont1 p
+{
+    padding-top: 30px;
+    padding-bottom: 35px;
+font-family: 'Oswald', sans-serif;
+}
+
+.content1 .cont1 button{
+font-family: 'Oswald', sans-serif;
+background-color: black;
+color: white;
+border: none;
+height:30px;
+width:150px;
+}
+.content1 .cont1 button a
+{
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    text-decoration: none;
+}
+.sixth
+{
+    height: 700px;
+    width:100%;
+    padding: 30px;
+}
+.cu 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.Product h1
+{
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.products
+{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    width: 100%;
+}
+.products a
+{
+    text-decoration: none;
+    color:black;
+}
+.product1, .product2, .product3, .product4, .product5
+{
+    width: 200px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.product1 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.products h2
+{
+    text-align: center;
+}
+
+.product2 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.product h3
+{
+    text-align: center;
+}
+
+.product3 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.card h3
+{
+    text-align: center;
+}
+
+.product4 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.products h3
+{
+    text-align: center;
+}
+
+.product5 img{
+    height:250px;
+    width:200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.product h3
+{
+    text-align: center;
+}
+.navs
+{
+    height:100px;
+    width:100%;
+}
+.box1
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.box1 button{
+    height:35px;
+    width:90px;
+    background-color: white;
+    border:1px solid rgba(0, 0, 0, 0.329);
+    font-size: 15px;
+}
+
+
+footer
+{
+    background-color: black;
+    color:white;
+    height: 400px;
+    width:100%;
+}
+footer .column
+{
+    display: flex;
+    height:250px;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.col1 li
+{
+    font-size: 15px;
+    list-style: none;
+    font-family:cursive;
+}
+.col1 li:first-child
+{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.col2 li, .col3 li, .col4 li
+{
+    font-size: 15px;
+    list-style: none;
+    font-family:cursive;
+}
+.col2 li:first-child, .col3 li:first-child, .col4 li:first-child
+{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.cop
+{
+    height:100px;
+    padding: 20px;
+}
+.cop h1{
+    border-top: 1px solid rgba(255, 255, 255, 0.542);
+    font-size: 35px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.cop p
+{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.check h1{
+    color: crimson;
+    text-align: center;
+    font-size: 40px;
+}
+.check form{
+    margin-left: 450px;
+    border: 1px solid blue;
+    width: 415px;
+    padding: 10px;
+}
+.check input{
+    width:400px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: chartreuse;
+    padding: 10px;
+}
+.check #submitdata{
+    background-color: orange;
+    color: darkblue;
+}

@@ -1,0 +1,62 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+.demo1{
+      margin-left: 800px;
+	  }
+.demo2{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+	.bg-light {
+		  background-color: #f8eff7!important;
+		} 
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://kit.fontawesome.com/e6da320557.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="total">
+    <header>
+        <div class="logo">Ecomm</div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search" name="search">
+        </div>
+        <nav>
+            <ul class="nav1">
+                <li><a href="http://localhost:3000/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li>Signup
+                    <div class="drop">
+                        {{# if login }}
+
+<a href="/user/profile">Profile</a> <br>
+<a href="/user/logout">Logout</a><br>
+{{ else }} 
+<a href="/user/signup">Signup</a> <br>
+<a href="/user/signin">Login</a><br>
+{{/if}}
+                    </div>
+                </li>
+            </ul>  
+        </nav>
+        <nav>
+            <ul  class="nav2">
+                <li><a href="/wishlist"><i class="fa-regular fa-heart"></i><br>Wishlist</a></li>
+                <li><a href="/shopping-cart"><i class="fa-solid fa-cart-plus"></i><br>Cart</a></li>
+                </ul>
+        </nav>
+    </header>
+</div>
+    </body>
+</html>
